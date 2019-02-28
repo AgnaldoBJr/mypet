@@ -1,0 +1,141 @@
+/*Estilos gerais para botões, icones genéricos utilizados no sistema  */
+.mp-h3{
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.mp-btn {
+	width: auto; 
+	margin: 0; 
+	position: absolute; 
+	top:-2px; 
+	right: 3px;
+}
+.mp-btn2 {
+	width: auto; 
+	margin: 0 5px;
+	float: left; 
+	font-size: 12px;
+	
+}
+.mp-actions {
+	position:relative;
+}
+i {
+	font-size: 16px
+}
+
+.blue{
+	color:blue
+}
+
+/*Estilo para  sistema/dashboard  */
+
+.mp-dashboard-panel{
+	height: 400px;
+}
+.mp-dashboard-a {
+	text-decoration: none;
+}
+.mp-dashboard-a:hover {
+	text-decoration: none;
+}
+.mp-dashboard-card {
+	height: 180px;
+	margin-bottom: 40px;
+	text-align: center;
+	text-decoration:none;
+	color:#222;
+}
+
+.mp-dashboard-title {
+	font-size: 16px;
+} 
+.mp-dashboard-text {
+	margin-top: 20px;
+	font-size: 48px;
+	color:#3f3ff0;
+	font-weight: 700;
+}
+
+
+/*Estilo para  sistema/servicos  */
+label input[type="file"]{
+  display: none;
+  margin: 50px;
+}
+
+
+.lb {
+  padding: 20px 40px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.img {
+  width: 200px; height: 200px; object-fit: container;
+}
+
+label {
+ cursor: pointer;
+}
+
+#upload-photo {
+ opacity: 0;
+ position: absolute;
+ z-index: -1;
+}
+
+/*Estilos para sistema/login*/
+.mp-login-title {
+  width: 100%; 
+  text-align: center; 
+  font-size:16px; 
+  text-transform: uppercase; 
+  margin-top: 20px;
+}
+.block-login div {
+  width: 100%;
+  text-align: center
+}
+.mp-bg-login {
+  background-color: #6d6dff; 
+  width: 100%; 
+  height: 100vh
+}
+
+/*Estilos para sistema/agendamentos */
+.mp-tab-content{
+  padding: 30px 20px;
+}
+.mp-tab-content .mp-title{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: blue;
+  font-size: 12px;
+}
+
+/*Estilo para sistema/serviços */
+.mp-img-table {
+  width: 50px; 
+  height: 50px; 
+  object-fit: cover;
+}
+
+.mp-img-cad {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover;
+}
+
+.mp-wrapper-img-cad {
+  width: 100%; 
+  text-align: center;
+}
+
+.mp-button-img-cad {
+  width: 100%; 
+  text-align: right;
+}

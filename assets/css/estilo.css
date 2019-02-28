@@ -1,0 +1,279 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	background-color: #eee;
+}
+
+.navbar {
+	background: #3f3ff0;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+
+.brand h1 {
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	font-size: 28px;
+	margin-left: 20px;
+
+}
+.titulo {
+	font-family: 'Exo', sans-serif;
+}
+
+
+.navbar ul {
+
+	margin-top: 15px;
+	list-style-type: none;
+}
+
+.navbar ul li {
+	display: inline-block;
+	width: 130px;
+}
+
+.navbar ul li a {
+	width: 130px;
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 14px;
+	font-weight: 500;
+
+}
+ 
+.navbar ul li a:hover {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	
+}
+
+.my-main {
+	margin:90px 40px 10px 40px;
+}
+
+.block {
+	background: white;
+	padding: 20px 40px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+.block-tab {
+	background: white;
+	padding: 20px 40px;
+	border-top: 0px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+.block-sidebar {
+	padding: 0px 15px;
+	background: white;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	height: 530px;
+	
+}
+
+.block-menu {
+	background-color: #24244e; 
+	width: 30%;
+	height: 528px;
+	display: flex;
+	align-items:stretch;
+	flex-direction: column;
+	z-index: 10;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.block-content{
+	background-color: white; 
+	width: 70%;
+	padding: 20px 20px; 
+}
+
+.block-menu-header {
+	height: 238px;
+	width: 100%;
+	padding: 10px 30px;
+	color: white;
+	
+
+}
+
+.block-menu-dados {
+	height: 70px;
+	width: 100%;
+	background-color: #38386e;
+	padding: 10px 40px;
+	color: white;
+}
+
+.block-menu-nav ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+}
+
+.block-menu-nav ul li {
+	width: 100%;
+	padding: 10px 15px;
+}
+
+.block-menu-nav ul li a {
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+}
+
+
+.block-menu-nav ul li a:hover {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.block-menu-nav ul li:hover {
+	background-color: #4483ce;
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	
+}
+
+.block-menu-nav ul li.active-sidebar {
+	background-color: #4483ce;
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	
+}
+
+.active-sidebar {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+.tab {
+	width: 100%;
+	height: 450px;
+}
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+h4 {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+.nome {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+
+
+.title {
+	margin-bottom: 20px;
+}
+
+.title h2 {
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+.tabs nav {
+	width: 100%;
+	background-color: #ccc;
+	margin: 0;
+}
+
+.tabs nav ul {
+	display: flex;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+
+.tabs nav ul li{
+	flex-grow: 1;
+	background-color: #f1f4f2;
+	width: 400px;
+	padding: 15px 30px;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+}
+
+.tabs nav ul li.active{
+	background-color: white;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 0px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+.tabs nav ul li a {
+	color: #4483ce;
+	font-weight: bold;
+	padding: 0;
+	text-decoration: none;
+}
+
+
+.tabs nav ul li.active a{
+	color: #777;
+	font-weight: bold;
+	
+}
+
+
+.block-login {
+	width:500px;
+	margin: 0px auto;
+	height: 400px;
+	padding-left: -30px;
+}
+
+.my-main-login{
+	padding-top:100px;
+}
+
+input, select, textarea{
+	width: 100%;
+	margin: 20px auto 0px;
+	padding: 10px;
+}
+
+button {
+	width: 100%;
+	margin-top:20px;
+}
+
+.login {
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+}
