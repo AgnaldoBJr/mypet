@@ -89,12 +89,22 @@
 			//Verificar se já existe e-mail cadastrado
 			$clientes = $this->Generic_model->readAll($table);
 
-			$cont = 0;
+			// Realizei a coreção do nome da variável
+			$count = 0;
+			
+			// Aqui você terá um problema de performace, pois imagine uma listagem de milhares de clientes, você perdera performace com o trafego de rede e lentidão na intereção de um por um
+			// Seria melhor e mais performatico a seguinte queries:
+			// SELECT count(1) from clientes where email = LOWER('email@docliente.com');
+			
 			foreach ($clientes as $cliente) {
 				if($cliente['email'] == $data['email'])
 					$count++;
 			}
+			
+			
 			//Caso já exista email cadastrado
+			// Nuca adicione tag HTML no controller, isso é responsábilidade da View
+			
 			if( $count > 0 ){
 				$this->session->set_flashdata('msg', 
 							'<span style="color: red; font-weight: 600">Este e-mail já foi cadastrado</span>');	
@@ -123,6 +133,7 @@
 
 		//Método para cadastrar um novo agendamento
 		public function agendar(){
+			// Nunca deixe qualquer tipo de saida no controller, primeiro seria uma falha de segurança, segundo poderia causar algum problema de session, em códigos legados
 			var_dump($this->input->post());
 			$data = $this->input->post();
 
